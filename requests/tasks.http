@@ -1,0 +1,35 @@
+
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=3&page=2
+
+###
+POST http://localhost:3000/api/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "make web site with React Native",
+    "description": "free lance",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/61d3bd2ed0d76d6ba61d0f5e
+
+###
+DELETE http://localhost:3000/api/tasks/61d3bd2ed0d76d6ba61d0f5e
+
+###
+GET http://localhost:3000/api/tasks/done
+
+
+###
+PUT http://localhost:3000/api/tasks/61d223940f5f140461f375cf HTTP/1.1
+content-type: application/json
+
+{
+    "title": "make web site with React",
+    "description": "free lance develop",
+    "done": true
+}

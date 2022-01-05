@@ -1,0 +1,4 @@
+# envairoment var
+.env
+/node_modules
+/dist
